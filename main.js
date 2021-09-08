@@ -87,15 +87,15 @@ keys.addEventListener('click', e => {
 
 function calculate(firstNum,operator,secondNum){
     if(operator === 'add'){
-        return parseFloat(firstNum) + parseFloat(secondNum) ;
+        return parseFloat(firstNum) +parseFloat(secondNum) ;
     }
     if(operator === 'subtract'){
-        return parseFloat(firstNum) - parseFloat(secondNum) ;
+        return parseFloat(firstNum) -parseFloat(secondNum) ;
     }
     if(operator === 'multiply'){
-        return parseFloat(firstNum) * parseFloat(secondNum) ;
+        return parseFloat(firstNum) *parseFloat(secondNum) ;
     }
     if(operator === 'divide'){
-        return parseFloat(firstNum) / parseFloat(secondNum) ;
+        return parseFloat(firstNum) /parseFloat(secondNum) ;
     }
 }
