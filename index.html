@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy tính đơn giản</title>
+    <style>
+        *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.calculator{
+    width: 400px;
+    padding:10px auto;
+}
+.calculator__keys{
+    width: 100%;
+}
+div button{
+    width: 23%;
+    height: 30%;
+    margin-top: 5px;
+    display: inline-block;
+}
+div .key--equal{
+    height: 135px;
+    float: right;
+    margin-right:20px ;
+}
+.calculator__display{
+    width: 95%;
+    border: solid black;
+    padding: 5px 7px;
+    text-align: right;
+    border-radius: 4px;
+}
+.is-depressed{
+    background-color: #ccc;
+}
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculator__display">
+            0
+        </div>
+        <div class="calculator__keys">
+            <button class="key--operator" data-action="add">+</button>
+            <button class="key--operator" data-action="subtract">-</button>
+            <button class="key--operator" data-action="multiply">&times;</button>
+            <button class="key--operator" data-action="divide">/</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="key--equal" data-action="calculate">=</button>
+            <button>5</button>
+            <button>6</button>
+            <button>4</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>0</button>
+            <button data-action="decimal">.</button>
+            <button data-action="clear">AC</button>
+        </div>
+    </div>
+    <script language="javascript" src="main.js"></script>
+</body>
+</html>
